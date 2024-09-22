@@ -1,0 +1,67 @@
+body{
+    background-color: 2F2F2F;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+.navbar {
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    padding: 15px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.user-logo {
+    position: absolute;
+    right: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.user-logo img {
+    height: 32px;
+    width: auto;
+}
+
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    gap: 3em;
+    flex-grow: 1;
+}
+.recent_machines, .history, .consumption{
+    width :300px;
+    height: 600px;
+    background-color: rgba(218, 218, 218, 0.731);
+    padding: 10px 30px;
+    border-radius: 32px;
+}
+.list{
+    list-style-type: none;
+}
+
+.history #search-box {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    border-radius: 32px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+}
+
+.history #search-box:focus {
+    outline: none;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+}
